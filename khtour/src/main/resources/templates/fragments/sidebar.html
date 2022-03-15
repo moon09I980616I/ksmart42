@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<div class="sidebar-panel nicescrollbar sidebar-panel-light" th:fragment="sidebarFragment">
+		<ul class="sidebar-menu">
+			<li class="sidebar-header"> Main navigation </li>
+			<li class="active">
+				<a href="#">
+					<i class="la la-home"></i> <span>Dashboard</span> <span class="sidebar-badge"> <span class="badge badge-danger">4</span> </span> <i class="la la-angle-right down-arrow"></i>
+				</a>
+				<ul class="sidebar-submenu">
+					<li class="active"><a href="index.html"><i class="la la-minus"></i> <span> Dashboard v1 </span> </a></li>
+					<li><a href="/template/index-02.html"><i class="la la-minus"></i> <span> Dashboard v2 </span> </a></li>
+					<li><a href="/template/index-03.html"><i class="la la-minus"></i> <span> Dashboard v3 </span> </a></li>
+					<li><a href="/template/index-04.html"><i class="la la-minus"></i> <span> Dashboard v4 </span> </a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class="la la-envelope"></i> <span>Email </span> <i class="la la-angle-right down-arrow"></i>
+				</a>
+				<ul class="sidebar-submenu">
+					<li><a href="/templates/main.html"><i class="la la-minus"></i> <span> Email compose </span> </a></li>
+					<li><a href="/template/email-inbox.html"><i class="la la-minus"></i> <span> Email inbox </span> </a></li>
+					<li><a href="/template/email-read.html"><i class="la la-minus"></i> <span> Email read </span> </a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class="la la-envelope"></i> <span>관리자: 문화재 관리  </span> <i class="la la-angle-right down-arrow"></i>
+				</a>
+				<ul class="sidebar-submenu">
+					<li><a th:href="@{/heritage/heritageInsert}"><i class="la la-minus"></i> <span> 문화재 정보 등록 </span> </a></li>
+					<li><a th:href="@{/heritage/heritageModify}"><i class="la la-minus"></i> <span> 문화재 정보 수정 </span> </a></li>
+					<li><a th:href="@{/heritage/heritageDelete}"><i class="la la-minus"></i> <span> 문화재 정보 삭제 </span> </a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class="la la-envelope"></i> <span>문화재 검색 </span> <i class="la la-angle-right down-arrow"></i>
+				</a>
+				<ul class="sidebar-submenu">
+					<li><a th:href="@{/heritage/heritageSearchListByItem}"><i class="la la-minus"></i> <span> 문화재 종목별 검색 </span> </a></li>
+					<li><a th:href="@{/heritage/heritageSearchListByRegion}"><i class="la la-minus"></i> <span> 문화재 지도별 검색 </span> </a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class="la la-envelope"></i> <span>Email </span> <i class="la la-angle-right down-arrow"></i>
+				</a>
+				<ul class="sidebar-submenu">
+					<li><a href="/template/email-compose.html"><i class="la la-minus"></i> <span> Email compose </span> </a></li>
+					<li><a href="/template/email-inbox.html"><i class="la la-minus"></i> <span> Email inbox </span> </a></li>
+					<li><a href="/template/email-read.html"><i class="la la-minus"></i> <span> Email read </span> </a></li>
+				</ul>
+			</li>
+			<li class="sidebar-header"> User interface </li>
+			<li>
+				<a href="#">
+					<i class="la la-cube"></i> <span>Basic ui</span> <i class="la la-angle-right down-arrow"></i>
+				</a>
+				<ul class="sidebar-submenu">
+					<li><a href="/template/ui-accordions.html"><i class="la la-minus"></i> <span> Accordions </span> </a></li>
+					<li><a href="/template/ui-alerts.html"><i class="la la-minus"></i> <span> Alerts </span> </a></li>
+					<li><a href="/template/ui-avatar.html"><i class="la la-minus"></i> <span> Avatar </span> </a></li>
+					<li><a href="/template/ui-badge.html"><i class="la la-minus"></i> <span> Badge </span> </a></li>
+					<li><a href="/template/ui-button.html"><i class="la la-minus"></i> <span> Button </span> </a></li>
+					<li><a href="/template/ui-button-dropdown.html"><i class="la la-minus"></i> <span> Button dropdown </span> </a></li>
+					<li><a href="/template/ui-button-group.html"><i class="la la-minus"></i> <span> Button group </span> </a></li>
+					<li><a href="/template/ui-cards.html"><i class="la la-minus"></i> <span> Cards </span> </a></li>
+					<li><a href="/template/ui-general.html"><i class="la la-minus"></i> <span> General </span> </a></li>
+					<li><a href="/template/ui-grid.html"><i class="la la-minus"></i> <span> Grid </span> </a></li>
+					<li><a href="/template/ui-pagination.html"><i class="la la-minus"></i> <span> Pagination </span> </a></li>
+					<li><a href="/template/ui-popovers.html"><i class="la la-minus"></i> <span> Popovers </span> </a></li>
+					<li><a href="/template/ui-progress-bar.html"><i class="la la-minus"></i> <span> Progress bar </span> </a></li>
+					<li><a href="/template/ui-tabs.html"><i class="la la-minus"></i> <span> Tabs </span> </a></li>
+					<li><a href="/template/ui-tooltips.html"><i class="la la-minus"></i> <span> Tooltips </span> </a></li>
+				</ul>
+			</li>
+		<li>
+			<a href="#">
+				<i class="la la-briefcase"></i> <span>Advance ui</span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/advanced-ui-bootstrap-spinner.html"><i class="la la-minus"></i> <span> Bootstrap spinner </span> </a></li>
+				<li><a href="/template/advanced-ui-cropperjs.html"><i class="la la-minus"></i> <span> Cropperjs </span> </a></li>
+				<li><a href="/template/advanced-ui-duallistbox.html"><i class="la la-minus"></i> <span> Duallistbox </span> </a></li>
+				<li><a href="/template/advanced-ui-lobilist.html"><i class="la la-minus"></i> <span> Lobilist </span> </a></li>
+				<li><a href="/template/advanced-ui-modals.html"><i class="la la-minus"></i> <span> Modals </span> </a></li>
+				<li><a href="/template/advanced-ui-nestable-lists.html"><i class="la la-minus"></i> <span> Nestable lists </span> </a></li>
+				<li><a href="/template/advanced-ui-rangeslider.html"><i class="la la-minus"></i> <span> Rangeslider </span> </a></li>
+				<li><a href="/template/advanced-ui-rating.html"><i class="la la-minus"></i> <span> Rating </span> </a></li>
+				<li><a href="/template/advanced-ui-scrollbar.html"><i class="la la-minus"></i> <span> Scrollbar </span> </a></li>
+				<li><a href="/template/advanced-ui-spinner.html"><i class="la la-minus"></i> <span> Spinner </span> </a></li>
+				<li><a href="/template/advanced-ui-sweetalert2.html"><i class="la la-minus"></i> <span> Sweetalert2 </span> </a></li>
+				<li><a href="/template/advanced-ui-switches.html"><i class="la la-minus"></i> <span> Switches </span> </a></li>
+				<li><a href="/template/advanced-ui-toastr.html"><i class="la la-minus"></i> <span> Toastr </span> </a></li>
+				<li><a href="/template/advanced-ui-treeview.html"><i class="la la-minus"></i> <span> Treeview </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-edit"></i> <span>Form</span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/form-basic.html"><i class="la la-minus"></i> <span> Form Basic </span> </a></li>
+				<li><a href="/template/form-colorpicker.html"><i class="la la-minus"></i> <span> Form Colorpicker </span> </a></li>
+				<li><a href="/template/form-datepicker.html"><i class="la la-minus"></i> <span> Form Datepicker </span> </a></li>
+				<li><a href="/template/form-editors.html"><i class="la la-minus"></i> <span> Form Editors </span> </a></li>
+				<li><a href="/template/form-input-groups.html"><i class="la la-minus"></i> <span> Form Input groups </span> </a></li>
+				<li><a href="/template/form-masks.html"><i class="la la-minus"></i> <span> Form Masks </span> </a></li>
+				<li><a href="/template/form-select.html"><i class="la la-minus"></i> <span> Form Select </span> </a></li>
+				<li><a href="/template/form-touchspin.html"><i class="la la-minus"></i> <span> Form Touchspin </span> </a></li>
+				<li><a href="/template/form-validation.html"><i class="la la-minus"></i> <span> Form Validation </span> </a></li>
+				<li><a href="/template/form-wizard.html"><i class="la la-minus"></i> <span> Form Wizard </span> </a></li>
+				<li><a href="/template/file-upload.html"><i class="la la-minus"></i> <span> File upload </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-smile-o"></i> <span>Icons pack</span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/icon-feather-font.html"><i class="la la-minus"></i> <span> Feather font </span> </a></li>
+				<li><a href="/template/icon-flag.html"><i class="la la-minus"></i> <span> Flag </span> </a></li>
+				<li><a href="/template/icon-font-awesome.html"><i class="la la-minus"></i> <span> Font awesome </span> </a></li>
+				<li><a href="/template/icon-line-awesome.html"><i class="la la-minus"></i> <span> Line awesome </span> </a></li>
+				<li><a href="/template/icon-material-design-iconic-font.html"><i class="la la-minus"></i> <span> Material iconic </span> </a></li>
+				<li><a href="/template/icon-weather.html"><i class="la la-minus"></i> <span> Weather iconic </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-database"></i> <span>Portlet</span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/portlet-advanced.html"><i class="la la-minus"></i> <span> Portlet advanced </span> </a></li>
+				<li><a href="/template/portlet-base.html"><i class="la la-minus"></i> <span> Portlet base </span> </a></li>
+				<li><a href="/template/portlet-dragula.html"><i class="la la-minus"></i> <span> Portlet dragula </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-area-chart"></i> <span>Chart</span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/chart-amcharts.html"><i class="la la-minus"></i>Amcharts </a></li>
+				<li><a href="/template/chart-amcharts-02.html"><i class="la la-minus"></i>Amcharts advance </a></li>
+				<li><a href="/template/chart-amcharts-maps.html"><i class="la la-minus"></i>Amcharts maps </a></li>
+				<li><a href="/template/chart-apexcharts.html"><i class="la la-minus"></i>Apexcharts chart </a></li>
+				<li><a href="/template/chart-chartjs.html"><i class="la la-minus"></i>Chartjs chart </a></li>
+				<li><a href="/template/chart-morris.html"><i class="la la-minus"></i>Morris chart </a></li>
+				<li><a href="/template/chart-peity.html"><i class="la la-minus"></i>Peity chart </a></li>
+				<li><a href="/template/chart-sparkline.html"><i class="la la-minus"></i>Sparkline chart </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-map"></i>
+				<span>Maps</span>
+				<i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/maps-google.html"><i class="la la-minus"></i> <span> Maps google </span> </a></li>
+				<li><a href="/template/maps-vector.html"><i class="la la-minus"></i> <span> Maps vector </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-table"></i>
+				<span>Tables</span>
+				<i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/tables-data.html"><i class="la la-minus"></i> <span> Tables data </span> </a></li>
+				<li><a href="/template/tables-general.html"><i class="la la-minus"></i> <span> Tables general </span> </a></li>
+				<li><a href="/template/tables-info.html"><i class="la la-minus"></i> <span> Tables info </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-comment"></i>
+				<span>Blog</span>
+				<i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/blog.html"><i class="la la-minus"></i> <span>  Blog </span> </a></li>
+				<li><a href="/template/blog-single.html"><i class="la la-minus"></i> <span>  Blog single </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-calendar"></i> <span>Calendar</span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/calendar.html"><i class="la la-minus"></i> <span>  Calendar </span> </a></li>
+				<li><a href="/template/calendar-list.html"><i class="la la-minus"></i> <span>  Calendar list </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="timeline.html">
+				<i class="la la-align-left"></i> <span>Timeline</span>
+				<span class="sidebar-badge"> <span class="badge badge-success">4</span> </span>
+			</a>
+		</li>
+		<li>
+			<a href="chat.html">
+				<i class="la la-wechat"></i> <span>Chat</span>
+				<span class="sidebar-badge"> <span class="badge badge-primary">1</span> </span>
+			</a>
+		</li>
+		<li class="sidebar-header"> Pages </li>
+		<li>
+			<a href="#">
+				<i class="la la-file"></i> <span>Pages</span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/blank-page.html"><i class="la la-minus"></i> <span> Blank pag </span> </a></li>
+				<li><a href="/template/contacts.html"><i class="la la-minus"></i> <span> Contact </span> </a></li>
+				<li><a href="/template/faqs.html"><i class="la la-minus"></i> <span> Faqs </span> </a></li>
+				<li><a href="/template/pricing-table.html"><i class="la la-minus"></i> <span> Pricing table </span> </a></li>
+				<li><a href="/template/profile.html"><i class="la la-minus"></i> <span> Profile </span> </a></li>
+				<li><a href="/template/projects.html"><i class="la la-minus"></i> <span> Projects </span> </a></li>
+				<li><a href="/template/search-results.html"><i class="la la-minus"></i> <span> Search results </span> </a></li>
+				<li>
+					<a href="#!">
+						<i class="la la-minus"></i> <span>File manager </span> <i class="la la-angle-right down-arrow"></i>
+					</a>
+					<ul class="sidebar-submenu">
+						<li><a href="file-manager.html"><i class="la la-minus"></i> <span> file manager </span> </a></li>
+						<li><a href="file-manager-grid.html"><i class="la la-minus"></i> <span> file manager grid </span> </a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-print"></i> <span>invoice </span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/invoice-01.html"><i class="la la-minus"></i> <span> Invoice 01 </span> </a></li>
+				<li><a href="/template/invoice-02.html"><i class="la la-minus"></i> <span> Invoice 02 </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-warning"></i> <span>Error </span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/error-01.html"><i class="la la-minus"></i> <span> Error 01 </span> </a></li>
+				<li><a href="/template/error-02.html"><i class="la la-minus"></i> <span> Error 02 </span> </a></li>
+				<li><a href="/template/error-03.html"><i class="la la-minus"></i> <span> Error 03 </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-expeditedssl"></i> <span>Forgot password  </span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/forgot-password-01.html"><i class="la la-minus"></i> <span> forgot password 01 </span> </a></li>
+				<li><a href="/template/forgot-password-02.html"><i class="la la-minus"></i> <span> forgot password 02 </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-user-plus"></i> <span>Login </span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/login-01.html"><i class="la la-minus"></i> <span> Login 01 </span> </a></li>
+				<li><a href="/template/login-02.html"><i class="la la-minus"></i> <span> Login 02 </span> </a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="la la-user-secret"></i> <span>Sign up </span> <i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="/template/sign-up-01.html"><i class="la la-minus"></i> <span> Sign up 01 </span> </a></li>
+				<li><a href="/template/sign-up-02.html"><i class="la la-minus"></i> <span> Sign up 02 </span> </a></li>
+			</ul>
+		</li>
+		<li class="sidebar-header"> Extras </li>
+		<li>
+			<a href="#">
+				<i class="la la-share"></i> <span>Multilevel</span>
+				<i class="la la-angle-right down-arrow"></i>
+			</a>
+			<ul class="sidebar-submenu">
+				<li><a href="#"><i class="la la-minus"></i> <span> Level One </span> </a></li>
+				<li>
+					<a href="#"><i class="la la-minus"></i> <span> Level One </span> <i class="la la-angle-right down-arrow"></i></a>
+					<ul class="sidebar-submenu">
+						<li><a href="#"><i class="la la-minus"></i> <span> Level Two </span> </a></li>
+						<li>
+							<a href="#"><i class="la la-minus"></i> <span> Level Two </span> <i class="la la-angle-right down-arrow"></i></a>
+							<ul class="sidebar-submenu">
+								<li><a href="#"><i class="la la-minus"></i> <span> Level Three </span> </a></li>
+								<li><a href="#"><i class="la la-minus"></i> <span> Level Three </span> </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="la la-minus"></i> <span> Level One </span> </a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+</html>
